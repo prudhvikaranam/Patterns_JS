@@ -1,0 +1,77 @@
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body>div {
+    padding: 0px 0em;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 1px 0px #e4bdeb;
+    height: 4vw;
+    padding: 0% 3%;
+}
+
+.header-logo {
+    font-size: 3em;
+    background: linear-gradient(90deg, #1a17d9, #d608fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-theme-selection {
+    font-size: 1.3em;
+}
+
+.theme-selection-btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    color: #1a17d9;
+    background-color: transparent;
+    border: 2px solid #d608fb;
+    cursor: pointer;
+}
+
+#selectedTheme {
+    text-transform: capitalize;
+}
+
+.main-container {
+    display: flex;
+    height: 96vh;
+}
+
+.side-container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 5px 1px #571bcd;
+}
+
+.side-container span {
+    font-size: 1.5rem;
+    padding: 1rem;
+    /* color: white; */
+    margin: 0rem 0rem 1rem 0rem;
+    background-color: #d3d3d3;
+}
+
+
+.content-container {
+    width: 80vw;
+    padding: 3% 0% 0% 5%;
+}
