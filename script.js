@@ -1,5 +1,6 @@
 import { CreateUser } from './patterns/Factory/CreateUser.js';
 import { ThemeSelection } from './patterns/Singleton/ThemeSelection.js';
+import { UserStore } from './patterns/Singleton/UserStore.js';
 
 
 // Code for changing the theme 
@@ -23,7 +24,23 @@ document.getElementById('theme-selection-btn').addEventListener('click', () => {
 
 
 // User creation
-const user = CreateUser.create('Prudhvi',29,'super');
-const user1 = CreateUser.create('Prudhvi',29);
+const form = document.getElementById("userForm");
+let userData;
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // prevents page reload
 
-console.log('Prudhvi User', user, user1);
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const role = document.getElementById("role").value;
+
+    userData = {
+        name,
+        email,
+        role
+    };
+
+
+    const userStore = UserStore.getInstance();
+    userStore.addUser(userData)
+    console.log('Prudhvi userssss', userStore.getUsers());
+});

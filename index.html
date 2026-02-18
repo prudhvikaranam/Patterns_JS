@@ -30,7 +30,39 @@
             <span>Analytics</span>
         </div>
         <div class="content-container">
-            <h1>Main content goes here</h1>
+
+
+
+            <div class="content-header">User Registration</div>
+            <br>
+            <form id="userForm" class="userForm">
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="name" required value="John Doe"/>
+                </div>
+
+                <br />
+
+                <div>
+                    <label>Email:</label>
+                    <input type="email" id="email" required value="john.doe@test.com"/>
+                </div>
+                <br />
+
+                <div>
+                    <label>User Role:</label>
+                    <select id="role">
+                        <option value="general">General</option>
+                        <option value="super">Super</option>
+                    </select>
+                </div>
+
+                <br />
+
+                <button type="submit">Submit</button>
+            </form>
+
+
         </div>
     </div>
 </body>

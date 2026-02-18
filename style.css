@@ -75,3 +75,36 @@ span {
     width: 80vw;
     padding: 3% 0% 0% 5%;
 }
+
+
+
+.content-header {
+    font-size: 2.5em;
+    background: #d608fb;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.userForm label {
+    font-size: 1.5em;
+    background: linear-gradient(90deg, #1a17d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.userForm input {
+    height: 1.4rem;
+}
+
+.userForm select {
+    width: 12rem;
+    height: 2rem;
+}
+
+
+.userForm button {
+    width: 12rem;
+    height: 2rem;
+}
